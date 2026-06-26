@@ -85,7 +85,7 @@ const Register = () => {
 
       login(data);
       
-      toast.success(`✅ Welcome ${form.name}! Registration successful.`);
+      toast.success(`Welcome ${form.name}! Registration successful.`);
 
       if (data.user.role === "farmer") {
         navigate("/farmer");
@@ -93,7 +93,7 @@ const Register = () => {
         navigate("/buyer");
       }
     } catch (error) {
-      toast.error(error.response?.data?.message || "❌ Registration failed");
+      toast.error(error.response?.data?.message || "Registration failed");
     } finally {
       setLoading(false);
     }

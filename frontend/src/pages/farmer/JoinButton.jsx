@@ -12,9 +12,9 @@ const JoinButton = ({ poolId, onJoined }) => {
       setLoading(true);
       const res = await API.post("/pools/join", { poolId, quantity: Number(qty) });
       if (res.data?.autoLocked) {
-        toast.success("🎉 Pool joined & automatically locked! Target reached! 🔒", { autoClose: 5000 });
+        toast.success("You have successfully joined the pool", { autoClose: 5000 });
       } else {
-        toast.success("Joined Pool ✅");
+        toast.success("Joined pool successfully");
       }
       setQty("");
       if (onJoined) onJoined();

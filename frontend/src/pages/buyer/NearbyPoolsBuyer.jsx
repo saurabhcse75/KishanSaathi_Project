@@ -109,6 +109,7 @@ const NearbyPoolsBuyer = () => {
                 <input
                   type="number"
                   placeholder="Min"
+                  min={0}
                   value={minPrice}
                   onChange={(e) => setMinPrice(e.target.value)}
                   className="w-full p-3 rounded-xl placeholder-slate-600 focus:outline-none transition-all duration-300 border focus:border-[#22C55E]"
@@ -119,6 +120,7 @@ const NearbyPoolsBuyer = () => {
                 <label className="block text-sm font-semibold mb-2 text-gray-300">₹ Max Price</label>
                 <input
                   type="number"
+                  min={0}
                   placeholder="Max"
                   value={maxPrice}
                   onChange={(e) => setMaxPrice(e.target.value)}
@@ -134,10 +136,10 @@ const NearbyPoolsBuyer = () => {
                   className="w-full p-3 rounded-xl focus:outline-none transition-all duration-300 border focus:border-[#22C55E]"
                   style={inputStyle}
                 >
+                  <option value="1">1 km</option>
+                  <option value="2">2 km</option>
+                  <option value="5">5 km</option>
                   <option value="10">10 km</option>
-                  <option value="25">25 km</option>
-                  <option value="50">50 km</option>
-                  <option value="100">100 km</option>
                 </select>
               </div>
               <div>

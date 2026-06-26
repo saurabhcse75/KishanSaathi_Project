@@ -112,6 +112,7 @@ const CreatePool = () => {
                   <input
                     name="price"
                     type="number"
+                    min={0}
                     placeholder="e.g., 50"
                     onChange={handleChange}
                     value={form.price}
@@ -181,7 +182,7 @@ const CreatePool = () => {
               {/* Contribution percentage preview */}
               <div>
                 <div className="flex justify-between text-xs mb-1.5 font-bold">
-                  <span className="text-gray-400">Your contribution vs target</span>
+                  <span className="text-gray-400">Pool Filled</span>
                   <span className="text-[#22C55E]">{pct.toFixed(0)}%</span>
                 </div>
                 <div className="w-full h-2.5 rounded-full overflow-hidden" style={{ background: "rgba(34,197,94,0.06)", border: "1px solid rgba(34,197,94,0.08)" }}>

@@ -48,7 +48,7 @@ const Login = () => {
       const data = res.data;
 
       login(data);
-      toast.success("✅ Login Successful!");
+      toast.success("Login Successful!");
 
       if (data.user.role === "farmer") {
         navigate("/farmer");
@@ -56,7 +56,7 @@ const Login = () => {
         navigate("/buyer");
       }
     } catch (error) {
-      toast.error(error.response?.data?.message || "❌ Login failed");
+      toast.error(error.response?.data?.message || "Login failed");
     } finally {
       setLoading(false);
     }

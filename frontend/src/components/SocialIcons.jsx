@@ -28,10 +28,10 @@ const icons = {
 };
 
 const socialLinks = [
-  { key: "facebook", href: "https://facebook.com", title: "Facebook" },
+  { key: "facebook", href: "https://www.facebook.com/people/Saurabh-Patel/pfbid0XiMS4XXAGtDW9ftT6cNbiG3AoLFzaBuvQfyjp5shXgFkguPtqiS1ZesATgKGKiiVl/?rdid=fKwDwcoQuExk1HKo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JtGitTh2M%2F", title: "Facebook" },
   { key: "twitter", href: "https://twitter.com", title: "Twitter" },
-  { key: "instagram", href: "https://instagram.com", title: "Instagram" },
-  { key: "linkedin", href: "https://linkedin.com", title: "LinkedIn" },
+  { key: "instagram", href: "https://instagram.com/saurabhpatel03", title: "Instagram" },
+  { key: "linkedin", href: "https://linkedin.com/contactsaurabh75", title: "LinkedIn" },
   { key: "email", href: "mailto:contact@kishansaathi.com", title: "Email" },
 ];
 

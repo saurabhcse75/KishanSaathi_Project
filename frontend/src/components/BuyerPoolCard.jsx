@@ -13,7 +13,7 @@ const BuyerPoolCard = ({ pool, onOrderPlaced }) => {
     try {
       setLoading(true);
       await API.post("/orders", { poolId: pool.id, quantity: Number(qty) });
-      toast.success("Order Requested ✅");
+      toast.success("Order Requested");
       setQty("");
       if (onOrderPlaced) onOrderPlaced();
     } catch (err) {
